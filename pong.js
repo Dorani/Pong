@@ -8,6 +8,8 @@ var dy = -2;
 var paddleHeight = 10;
 var paddleWidth = 75;
 var paddleX = (canvas.width-paddleWidth)/2;
+var rightPressed = false;
+var leftPressed = false;
 
 function drawBall() {
     ctx.beginPath();
@@ -23,7 +25,7 @@ function drawPaddle() {
     ctx.fillStyle = "#0095DD";
     ctx.fill();
     ctx.closePath();
-}
+}add
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
