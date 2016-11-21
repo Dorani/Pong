@@ -19,11 +19,21 @@ ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
 ctx.stroke();
 ctx.closePath();
 
+
+var x = canvas.width/2;
+var y = canvas.height-30;
+var dx = 2;
+var dy = -2;
+
 function draw() {
+ctx.clearRect(0, 0, canvas.width, canvas.height);
 ctx.beginPath();
-ctx.arc(50, 50, 10, 0, Math.PI*2);
+ctx.arc(x, y, 10, 0, Math.PI*2);
 ctx.fillStyle = "#0095DD";
 ctx.fill();
 ctx.closePath();
+x += dx;
+y += dy;
+
 }
 setInterval(draw, 10);
