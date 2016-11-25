@@ -103,7 +103,7 @@ function collisionDetection() {
                     b.status = 0;
                     score++;//each time collisionDetection is true add value to score
                     if(score == brickRowCount*brickColumnCount) {
-                       alert("YOU WIN, CONGRATULATIONS!");
+                       alert("You have destroyed all the blocks!");
                        document.location.reload();
                    }
                 }
