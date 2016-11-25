@@ -18,6 +18,8 @@ var brickPadding = 10;
 var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
 var score = 0;
+
+
 document.addEventListener("keydown",keyDownHandler,false);
 document.addEventListener("keyup",keyUpHandler,false);
 
@@ -122,6 +124,7 @@ function draw(){
 	drawBall();
 	drawPaddle();
 	collisionDetection();
+  drawScore();
  if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
         dx = -dx;
     }
