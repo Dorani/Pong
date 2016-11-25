@@ -100,6 +100,10 @@ function collisionDetection() {
                     dy = -dy;
                     b.status = 0;
                     score++;//each time collisionDetection is true add value to score
+                    if(score == brickRowCount*brickColumnCount) {
+                       alert("YOU WIN, CONGRATULATIONS!");
+                       document.location.reload();
+                   }
                 }
             }
         }
