@@ -1,4 +1,4 @@
-var canvas=document.getElementById("myCanvas");
+var canvas=document.getElementById("myCanvas");//we need to grab reference to the canvas element in JS
 var ctx = canvas.getContext("2d");
 var ballRadius=10;
 var x=canvas.width/2;
